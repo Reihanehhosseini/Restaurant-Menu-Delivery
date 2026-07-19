@@ -5,6 +5,7 @@ import { GoChevronRight } from "react-icons/go";
 export default function Button({ title, icon, link }) {
   return (
     <Link
+      
       href={link}
       className="w-60 iphon11:w-70 text-[10px] iphon11:text-[13px] sm:text-[16px] sm:w-80 bg-linear-to-r from-gold via-lightGold to-gold flex items-center justify-between px-5 rounded-3xl py-3  gap-2"
     >

@@ -2,24 +2,28 @@
 "use client";
 
 import MenuItemCard from "./MenuItemCard";
-import SearchFood from "./SearchFood";
 
-export default function MenuPanel({ category }) {
+export default function MenuPanel({ category, selectedFood }) {
+  const foods = selectedFood ? [selectedFood] : category.items;
+  console.log(selectedFood);
+
   return (
-    <div className="flex flex-1 flex-col overflow-hidden">
-      <SearchFood />
-      <div className="flex-1 overflow-y-auto px-4 pb-6 pt-2 scrollbar-none ">
-        <h2 className="my-6! font-sans text-lg font-semibold text-white">
-          {category.label}
-        </h2>
-        <div className="relative mt-3 mb-8 h-0.5 w-full">
-          <div className="absolute inset-0 rounded-full bg-linear-to-r from-transparent via-[#D9B45C] to-transparent"></div>
-        </div>
-        <div className="flex flex-col gap-5 justify-center items-center">
-          {category.items.map((item) => (
-            <MenuItemCard key={item.id} item={item} />
-          ))}
-        </div>
+    <div className="flex flex-1 px-5 flex-col pt-8  border-l border-l-bordertest/30 bg-inherit gap-5">
+      <h2 className=" font-serif  font-semibold text-white text-2xl ">
+        {selectedFood ? selectedFood.name : category.label}
+      </h2>
+      {!selectedFood && (
+        <h4 className="font-serif text-[15px] text-textgray pb-1 font-normal">
+          {`Discover our signature ${selectedFood ? selectedFood.name : category.label} beverages`}
+        </h4>
+      )}
+      <div className="relative h-0.5 w-full">
+        <div className="absolute inset-0 rounded-full bg-linear-to-r from-transparent via-line to-transparent"></div>
+      </div>
+      <div className="flex flex-col gap-5 justify-center items-center pt-5">
+        {foods.map((item) => (
+          <MenuItemCard key={item.id} item={item} />
+        ))}
       </div>
     </div>
   );

@@ -11,6 +11,7 @@ export default function NavLink() {
         title="RESTAURANT MENU"
         icon={<BiSolidDish className="fill-black w-5 h-5" />}
         link={"/menu"}
+        
       />
       <Button
         title="ABOUT US"

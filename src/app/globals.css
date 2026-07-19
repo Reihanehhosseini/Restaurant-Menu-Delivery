@@ -9,17 +9,22 @@
   --color-gold: #af8c48;
   --color-lightGold: #d8b975;
   --color-line:#D9B45C;
+  --color-border:#C8A86B;
+  --color-bordertest:#8C6A34;
+  --color-textgray: #7A7A7A;
   
   --font-sans:var(--font-montserrat);
   --font-serif:var(--font-playfair);
   --font-myfont: var(--font-myfont);
   --breakpoint-iphon11: 414px;
+  --breakpoint-533:533px
 }
 
 
 
 body {
 background-color: #000000;
-overscroll-behavior-y: none;
+
 color: #ffff;
 }
+

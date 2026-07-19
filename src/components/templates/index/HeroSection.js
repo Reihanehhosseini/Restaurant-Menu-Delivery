@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-      <div className=" relative h-100 min-h-90 w-full overflow-hidden ">
+      <div className=" relative h-100 min-h-90 w-full ">
         <Image
           src="/images/hero-land2.PNG"
           alt="Sliced grilled chicken breast garnished"

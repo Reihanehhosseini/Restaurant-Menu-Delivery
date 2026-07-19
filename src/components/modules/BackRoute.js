@@ -13,9 +13,9 @@ export default function BackRoute() {
   };
 
   return (
-    <div className="w-full " onClick={backFunction}>
-      <span className="w-10 h-10  rounded-full flex items-center justify-center bg-line ">
-        <IoChevronBackOutline className="fill-black! stroke-black"/>
+    <div className="" onClick={backFunction}>
+      <span className="h-9 w-9 iphon11:h-11 iphon11:w-11  rounded-xl flex items-center justify-center border border-[#2a2738] bg-inherit sm:w-12 sm:h-12">
+        <IoChevronBackOutline className=" stroke-white" />
       </span>
     </div>
   );

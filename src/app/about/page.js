@@ -1,10 +1,22 @@
-import BackRoute from '@/components/modules/BackRoute';
-import React from 'react'
+import BackRoute from "@/components/modules/BackRoute";
+import Story from "@/components/templates/about/Story";
+import AboutRestaurant from "@/components/templates/about/AboutRestaurant";
+import React from "react";
+import AboutBox from "@/components/templates/about/AboutBox";
+import AboutImage from "@/components/templates/about/AboutImage";
+
 
 export default function page() {
   return (
-    <div className="w-full min-h-screen p-6 bg-[#101010] bg-[linear-gradient(45deg,#1A1A1A_30%,#121212_40%,#0B0B0B_100%)]">
-      <BackRoute />
+    <div className="w-full flex flex-col min-h-screen py-6">
+      <div className="px-6">
+        <BackRoute />
+      </div>
+      <AboutRestaurant />
+      <Story />
+      <AboutImage />
+      <AboutBox />
+    
     </div>
   );
 }

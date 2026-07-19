@@ -1,6 +1,8 @@
 import { Playfair_Display, Montserrat } from "next/font/google";
-import localFont from "next/font/local" ;
+import localFont from "next/font/local";
 import "./globals.css";
+import ScrollTop from "@/components/modules/ScrollTop";
+import { CartProvider } from "@/context/CartContext";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -32,10 +34,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={` ${playfair.variable} ${montserrat.variable} ${myFont.variable} font-sans
-    bg-black text-white h-full antialiased`}>
+    <html
+      lang="en"
+      className={` ${playfair.variable} ${montserrat.variable} ${myFont.variable} font-sans
+    bg-black text-white h-full antialiased`}
+    >
       <body className={`min-h-full flex flex-col font-semibold!`}>
-        {children}
+        <CartProvider>
+          <ScrollTop />
+          {children}
+        </CartProvider>
       </body>
     </html>
   );
