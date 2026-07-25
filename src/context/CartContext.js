@@ -1,14 +1,20 @@
 "use client";
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 const CartContext = createContext();
 
 export function CartProvider({ children }) {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(() => {
+    if (typeof window !== "undefined") {
+      const savedCart = localStorage.getItem("cart");
+      return savedCart ? JSON.parse(savedCart) : [];
+    }
+    return [];
+  });
 
   const addToCart = (food) => {
     console.log(cart.length);
-    
+
     const exist = cart.find((item) => item.id === food.id);
 
     if (exist) {
@@ -49,6 +55,9 @@ export function CartProvider({ children }) {
     0,
   );
 
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
   return (
     <CartContext.Provider
       value={{
@@ -62,8 +71,8 @@ export function CartProvider({ children }) {
         totalPrice,
       }}
     >
-        {children}
+      {children}
     </CartContext.Provider>
   );
 }
-export const useCart = () => useContext(CartContext)
+export const useCart = () => useContext(CartContext);
