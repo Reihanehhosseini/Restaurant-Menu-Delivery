@@ -11,7 +11,7 @@ export default function Summary() {
     <div className="w-full flex  flex-col justify-between gap-6 ">
       <div className="w-full flex  justify-between gap-3 ">
         <div className="flex-1 items-stretch justify-center flex flex-col gap-2 p-3 rounded-[10px] border border-bordertest/30 bg-linear-to-b from-[#151515] to-[#101010] shadow-[0_0_0_1px_rgba(217,178,107,.08)]">
-          <h1 className="font-serif text-[12px] iphon11:text-sm text-[#F2F2F2]">
+          <h1 className="font-serif text-[12px] iphon11:text-sm text-gold">
             Order Summary
           </h1>
           <div className="flex items-center justify-between">

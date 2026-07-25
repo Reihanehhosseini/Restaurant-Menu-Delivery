@@ -3,16 +3,16 @@ import { LuLeaf } from "react-icons/lu";
 
 export default function AboutItem(props) {
   return (
-    <div className="rounded-lg border border-bordertest/30 py-3 gap-2 px-1 flex flex-col items-center justify-between">
-      <span>
-        {props.icons} 
+    <div className="  flex  items-center justify-between gap-3">
+      <span className="rounded-[10px] border border-bordertest/30 bg-linear-to-b from-[#151515] to-[#101010] shadow-[0_0_0_1px_rgba(217,178,107,.08)] p-1">
+        {props.icons}
       </span>
-      <span className="text-center text-[12px] text-gold font-serif">
-       {props.titr}
-      </span>
-      <p className="text-center text-[10px] text-gray-200">
-        We Source premium seasonal ingredients from trusted local and international suppliers to ensure every plate 
-      </p>
+      <div className="flex flex-col">
+        <span className=" text-[12px] text-gold font-serif">
+          {props.titr}
+        </span>
+        <p className=" text-[10px] text-gray-200">{props.desc}</p>
+      </div>
     </div>
   );
 }

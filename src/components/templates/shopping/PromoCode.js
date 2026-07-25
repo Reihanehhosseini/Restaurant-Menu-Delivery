@@ -6,7 +6,7 @@ export default function PromoCode() {
     <div className="w-full py-4  rounded-[10px] border border-bordertest/30 bg-linear-to-b from-[#151515] to-[#101010] shadow-[0_0_0_1px_rgba(217,178,107,.08)] h-auto p-3 flex items-center justify-between gap-3">
       <div className="flex gap-2 items-center">
         <IoTicketOutline className="fill-gold stroke-gold" />
-        <h6 className="font-serif text-[12px] iphon11:text-sm text-[#F2F2F2]">Promo Code</h6>
+        <h6 className="font-serif text-[12px] iphon11:text-sm text-gold">Promo Code</h6>
       </div>
       <div className="flex items-center">
         <form action="" className="flex items-center gap-1">

@@ -7,15 +7,22 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import Image from 'next/image';
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 export default function AboutImage() {
+    useEffect(() => {
+      AOS.init({ duration: 1000 });
+    }, []);
   return (
-    <div className="flex flex-col gap-2.5 mt-5 p-5 ">
+    <div className="flex flex-col gap-2.5 px-5 " data-aos="fade-left">
       <div className="w-full rounded-lg border border-bordertest/30">
         <Swiper
           navigation={true}
           pagination={true}
           modules={[Navigation, Pagination]}
-          className="mySwiper relative h-100 min-h-90 w-full rounded-lg border border-bordertest/30"
+          className="mySwiper relative h-50 533:h-100 533:min-h-90 w-full rounded-lg border border-bordertest/30"
         >
           <SwiperSlide>
             <Image

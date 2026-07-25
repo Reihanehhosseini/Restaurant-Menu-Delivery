@@ -17,8 +17,8 @@ export default function ItemCart(props) {
         />
       </div>
       <div className="w-full flex flex-col gap-3">
-        <div className="font-serif">{props.name}</div>
-        <div className="font-serif text-[#7A7A7A] text-[12px] iphon11:text-sm sm:text-[16px]">
+        <div className="font-serif text-gold">{props.name}</div>
+        <div className="font-serif text-textgray text-[12px] iphon11:text-sm sm:text-[16px]">
           {props.desc}
         </div>
         <div className="font-serif">$ {props.price}</div>

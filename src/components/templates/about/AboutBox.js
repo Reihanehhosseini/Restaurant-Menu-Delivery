@@ -1,27 +1,36 @@
+"use client";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import React from "react";
 import AboutItem from "./AboutItem";
-import { LuLeaf } from "react-icons/lu";
-import { PiChefHatLight } from "react-icons/pi";
-import { BiDish } from "react-icons/bi";
+import { SlLocationPin } from "react-icons/sl";
+import { MdOutlinePhone } from "react-icons/md";
+import { AiOutlineMail } from "react-icons/ai";
 
 export default function AboutBox() {
+    useEffect(() => {
+      AOS.init({ duration: 1000 });
+    }, []);
   return (
-    <div className="w-full flex flex-col items-center justify-between px-8 533:px-5 mt-10 gap-3 533:flex-row">
-      <AboutItem
-        icons={<LuLeaf className="size-5 stroke-gold" />}
-        titr="FRESH INGREDIENTS"
-        desc="We Source premium seasonal ingredients from trusted local and international suppliers to ensure every plat"
-      />
-      <AboutItem
-        icons={<PiChefHatLight className="size-5 stroke-gold fill-gold" />}
-        titr="AWARD-WINING CHEFS"
-        desc="Our chefs combine classic techniques contemporary creativity, transforming every recipe into an elegant culinary masterpiece"
-      />
-      <AboutItem
-        icons={<BiDish className="size-5 stroke-gold fill-gold" />}
-        titr="PREMIUM EXPERIENCE"
-        desc="From the warm ambiance to personalized service , every visit is designed to make you feel welcomed, relaxed, and inspired"
-      />
+    <div className="px-5" data-aos="fade-right">
+      <div className="w-full flex flex-col sm:flex-row gap-3 items-start justify-between p-5  rounded-[10px] border border-bordertest/30 bg-linear-to-b from-[#151515] to-[#101010] shadow-[0_0_0_1px_rgba(217,178,107,.08)] ">
+        <AboutItem
+          icons={<SlLocationPin className="size-5 stroke-gold fill-gold" />}
+          titr="ADDRESS"
+          desc="Isf, chaharbagh bala street "
+        />
+        <AboutItem
+          icons={<MdOutlinePhone className="size-5 stroke-gold fill-gold" />}
+          titr="PHONE"
+          desc="+98 913 9593707"
+        />
+        <AboutItem
+          icons={<AiOutlineMail className="size-5 stroke-gold fill-gold" />}
+          titr="EMAIL"
+          desc="Reihanehh1368@gmail.com"
+        />
+      </div>
     </div>
   );
 }

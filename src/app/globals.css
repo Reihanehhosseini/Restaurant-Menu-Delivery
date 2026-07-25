@@ -27,4 +27,6 @@ background-color: #000000;
 
 color: #ffff;
 }
-
+.react-datepicker-wrapper{
+  width: 100%;
+}

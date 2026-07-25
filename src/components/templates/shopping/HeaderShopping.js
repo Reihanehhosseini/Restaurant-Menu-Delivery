@@ -5,7 +5,7 @@ export default function HeaderShopping() {
   return (
     <div className='w-full flex items-center justify-between'>
       <BackRoute/>
-      <h1 className='font-serif text-xl'>Your Cart</h1>
+      <h1 className=' text-xl'>Cart</h1>
 
     </div>
   )

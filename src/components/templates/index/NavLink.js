@@ -8,7 +8,7 @@ export default function NavLink() {
   return (
     <div className="w-auto flex flex-col items-center justify-center gap-6  md:mb-5!">
       <Button
-        title="RESTAURANT MENU"
+        title="MENU"
         icon={<BiSolidDish className="fill-black w-5 h-5" />}
         link={"/menu"}
         
@@ -19,9 +19,9 @@ export default function NavLink() {
         link={"/about"}
       />
       <Button
-        title="My Location"
+        title="RESERVE"
         icon={<MdPeopleAlt className="fill-black w-5 h-5" />}
-        link={"/location"}
+        link={"/reserve"}
       />
     </div>
   );
