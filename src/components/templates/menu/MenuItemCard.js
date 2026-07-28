@@ -22,7 +22,7 @@ export default function MenuItemCard({ item }) {
           <p className=" text-[14px]  text-white sm:text-base font-serif">
             {item.name}
           </p>
-          <p className="text-[14px] font-serif text-[#7A7A7A]">{item.desc}</p>
+          <p className="text-[14px] font-serif text-textgray">{item.desc}</p>
           <p className="mt-0.5 text-sm font-semibold text-white md:hidden">
             {item.price.toFixed(2)} $
           </p>

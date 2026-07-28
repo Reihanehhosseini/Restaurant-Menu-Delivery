@@ -9,7 +9,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 export default function MenuClient({ products }) {
   const { totalItem, totalPrice } = useCart();
-  const [activeCategory, setaAtiveCategory] = useState(products[1].id);
+  const [activeCategory, setaAtiveCategory] = useState(products[0].id);
   const [showCart, setShowCart] = useState(false);
   const changeCategory = (id) => {
     setaAtiveCategory(id);

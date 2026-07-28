@@ -30,7 +30,7 @@ const products = [
         id: "ht3",
         name: "Chamomile",
         price: 2.75,
-        image: "/images/menu/chamomile tea.PNG",
+        image: "/images/menu/chamomiletea.png",
         desc: "Calming chamomile infusion",
       },
     ],
@@ -157,7 +157,7 @@ const products = [
         name: "BBQ Burger",
         price: 9.5,
         image: "/images/menu/BBQ Burger.png",
-        desc:"Smoky beef burger with BBQ sauce"
+        desc: "Smoky beef burger with BBQ sauce",
       },
     ],
   },
@@ -171,21 +171,21 @@ const products = [
         name: "pizza Margherita",
         price: 10.0,
         image: "/images/menu/Margherita.PNG",
-        desc:"Classic pizza tomato and mozzarella",
+        desc: "Classic pizza tomato and mozzarella",
       },
       {
         id: "pz2",
         name: "pizza Pepperoni",
         price: 11.5,
         image: "/images/menu/Pepperoni.PNG",
-        desc:"Pizza with spicy pepproni slices"
+        desc: "Pizza with spicy pepproni slices",
       },
       {
         id: "pz3",
         name: "pizza Quattro Formaggi",
         price: 12.0,
         image: "/images/menu/QuattroFormaggi.png",
-        desc:"Four cheese italian pizza"
+        desc: "Four cheese italian pizza",
       },
     ],
   },
