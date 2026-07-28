@@ -7,7 +7,7 @@ export default function ItemCart(props) {
   const {increase, decrease, removeFromCart } = useCart();
 
   return (
-    <div className="w-full rounded-[10px] border border-bordertest/30 bg-linear-to-b from-[#151515] to-[#101010] shadow-[0_0_0_1px_rgba(217,178,107,.08)]h-auto p-2 flex gap-3">
+    <div className="w-full rounded-[10px] border border-bordertest/30 bg-linear-to-b from-[#151515] to-[#101010] shadow-[0_0_0_1px_rgba(217,178,107,.08)] h-auto p-2 flex gap-3">
       <div className="border overflow-hidden  border-bordertest/30 rounded-[10px] relative flex  justify-center items-center h-40 w-full  ">
         <Image
           src={props.image}

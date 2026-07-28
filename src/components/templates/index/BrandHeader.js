@@ -11,7 +11,7 @@ export default function BrandHeader() {
   return (
     <header className="flex flex-col items-center gap-7 px-1.25 ">
       <div className="space-y-3" data-aos="fade-up">
-        <h1 className="text-center text-2xl iphon11:text-3xl font-medium tracking-[0.18em] text-white font-serif! sm:text-4xl sm:tracking-[0.26em] md:text-5xl">
+        <h1 className="text-center text-2xl iphon11:text-3xl  tracking-[0.18em] text-white font-serif  sm:text-4xl sm:tracking-[0.26em] md:text-5xl">
           Digital Menu
         </h1>
         <div className="flex items-center justify-center gap-3 sm:gap-4">

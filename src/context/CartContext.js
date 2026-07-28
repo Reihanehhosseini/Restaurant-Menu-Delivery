@@ -13,7 +13,7 @@ export function CartProvider({ children }) {
   });
 
   const addToCart = (food) => {
-    console.log(cart.length);
+   
 
     const exist = cart.find((item) => item.id === food.id);
 
@@ -50,6 +50,7 @@ export function CartProvider({ children }) {
     setCart([]);
   };
   const totalItem = cart.reduce((sum, item) => sum + item.quantity, 0);
+  
   const totalPrice = cart.reduce(
     (sum, item) => sum + item.quantity * item.price,
     0,

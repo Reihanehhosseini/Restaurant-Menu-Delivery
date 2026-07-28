@@ -13,7 +13,7 @@ const TimeSelector = () => {
             key={time}
             type="button"
             onClick={() => setFieldValue("time", time)}
-            className={`rounded-xl text-[12px] border p-1 transition ${values.time === time ? "border-border text-gold" : "border-[#333] bg-[#161616] text-white hover:border-border"}`}
+            className={`rounded-xl text-[12px] border p-1 transition ${values.time === time ? "border-border text-gold" : "border-[#333] bg-[#161616] text-textgray hover:border-border"}`}
           >
             {time}
           </button>

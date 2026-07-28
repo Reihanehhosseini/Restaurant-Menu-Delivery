@@ -1,5 +1,6 @@
 import BackRoute from "@/components/modules/BackRoute";
 import FormReserve from "@/components/templates/reserve/FormReserve";
+
 import ReserveImage from "@/components/templates/reserve/ReserveImage";
 import React from "react";
 
@@ -13,6 +14,7 @@ export default function page() {
         <ReserveImage />
         <FormReserve/>
       </div>
+     
     </div>
   );
 }

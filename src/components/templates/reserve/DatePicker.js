@@ -18,7 +18,7 @@ const ReservationDatePicker = () => {
           minDate={new Date()}
           dateFormat="MMMM d, yyyy"
           placeholderText="Choose Your date"
-          className="w-full  px-4 py-2 text-white outline-none focus:border-border placeholder:text-[12px]"
+          className="w-full text-[12px]  px-4 py-2 text-textgray outline-none focus:border-border placeholder:text-[12px]"
         />
         <HiOutlineCalendarDateRange className="size-6 stroke-gold" />
       </div>
