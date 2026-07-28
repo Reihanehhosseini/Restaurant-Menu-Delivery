@@ -62,7 +62,7 @@ export default function FormReserve() {
         </Form>
       </Formik>
       {open && (
-        <Modal close={() => setOpen(false)}>
+        <Modal>
           <div className="w-[90%] h-[50%] rounded-[10px] border border-lightGold bg-black shadow-[0_0_0_1px_rgba(217,178,107,.08) flex flex-col items-center gap-3 p-3">
             <div className="w-full flex justify-end">
               <IoMdClose
