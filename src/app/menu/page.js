@@ -1,12 +1,8 @@
 import { getProducts } from "@/lib/product";
 import MenuClient from "@/components/templates/menu/MenuClient";
 
+export default function page() {
+  const products = getProducts();
 
-export default async function page() {
-  const products = await getProducts();
-
-
-  return <MenuClient products={products}/>
-
-
+  return <MenuClient products={products} />;
 }
